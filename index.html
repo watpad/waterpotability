@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coliform Detector</title>
+    <title>Bacteria Detection</title>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Coliform & E. coli Detection</h1>
-    <img id="coliformImage" src="" alt="Detection Result">
-    <p><strong>E. coli Count:</strong> <span id="ecoliCount">0</span></p>
-    <p><strong>Coliform Count:</strong> <span id="coliformCount">0</span></p>
-    <p><strong>Potability:</strong> <span id="potability">Unknown</span></p>
-    
+    <h1>Bacteria Detection Results</h1>
+    <div class="container">
+        <img id="bacteriaImage" src="" alt="Latest Detection Image">
+        <p><strong>E. coli Count:</strong> <span id="ecoliCount">N/A</span></p>
+        <p><strong>Coliform Count:</strong> <span id="coliformCount">N/A</span></p>
+        <p><strong>Total Count:</strong> <span id="totalCount">N/A</span></p>
+        <p><strong>Potability:</strong> <span id="potability">N/A</span></p>
+        <p><strong>Timestamp:</strong> <span id="timestamp">N/A</span></p>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
